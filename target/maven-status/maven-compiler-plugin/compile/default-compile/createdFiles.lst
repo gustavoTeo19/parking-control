@@ -1,0 +1,9 @@
+com\api\parkingcontrol\models\ParkingSpotModel.class
+com\api\parkingcontrol\models\RoleModel.class
+com\api\parkingcontrol\ParkingControlApplication.class
+com\api\parkingcontrol\configs\DateConfig.class
+com\api\parkingcontrol\repositories\ParkingSpotRepository.class
+com\api\parkingcontrol\dtos\ParkingSpotDto.class
+com\api\parkingcontrol\enums\RoleName.class
+com\api\parkingcontrol\services\ParkingSpotService.class
+com\api\parkingcontrol\controllers\ParkingSpotController.class
