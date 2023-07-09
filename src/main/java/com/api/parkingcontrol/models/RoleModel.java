@@ -12,12 +12,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.security.core.GrantedAuthority;
 import com.api.parkingcontrol.enums.RoleName;
 
 @Entity
 @Table(name = "TB_ROLE")
-public class RoleModel implements GrantedAuthority, Serializable{
+public class RoleModel implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID roleId;
@@ -26,11 +25,7 @@ public class RoleModel implements GrantedAuthority, Serializable{
     @Column(nullable = false, unique = true)
     private RoleName roleName;
 
-    @Override
-    public String getAuthority() {
-        // TODO Auto-generated method stub
-        return this.roleName.toString();
-    }
+
 
     public UUID getRoleId() {
         return this.roleId;
